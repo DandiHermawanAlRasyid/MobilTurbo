@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<title>CSS Website Layout</title>
+		<style>
+			body{
+				margin: 0;
+			}
+			/*style head*/
+			.header{
+				background-image: url(GTR.jpg);
+				padding: 60px;
+				text-align: center;
+			}
+			/* merubah warna pas kursor di meneyntuh link*/
+			.topnav a:hover{
+				background-color: #ddd;
+				color: black;
+			}
+			.topnav a{
+				float:left;
+				display: block;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			*{
+				box-sizing: border-box;
+			}
+			/* style the top navigation bar*/
+
+			.topnav{
+				overflow: hidden;
+				background-color: #333;
+			}
+			.column{
+				float: left;
+				width: 33.33%;
+				padding: 15px;
+			}
+			.row::after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			body{
+				font-family: Arial;
+				padding: 10px;
+				background: white;
+			}
+			.header h1{
+				font-size: 50px;
+			}
+			.leftcolumn{
+				float: left;
+				width: 75%;
+			}
+			.rightcolumn{
+				float: left;
+				width: 25%;
+				background-color: #yellow;
+				padding-left: 20px;
+			}
+			.fakeimg {
+				background-color: #aaa;
+				width: 100%;
+				padding: 20px;
+			}
+			.card{
+				background-color: #f1f1f1;
+				padding: 20px;
+				margin-top: 20px;
+			}
+			.footer{
+				padding: 20px;
+				text-align: center;
+				background: white;
+				margin_top:20px;
+			}
+			@media screen and (max-width:800px){
+				.leftcolumn,.rightcolumn{
+					width: 100%;
+					padding: 0;
+				}
+			}
+			@media screen and (max-width:400px){
+				.topnav a{
+					float: none;
+					width: 100%;h
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Permobilan</h1>
+			<p>Mobil Supercar</p>
+		</div>
+		<div class="topnav">
+			<a href="home.html">Foto1</a>
+			<a href="Photo.html">Foto2</a>
+			<a href="Admin.html">Admin</a>
+		</div>
+		<div class="row">
+	<div class="leftcolumn">
+		<div class="card">
+			<h2>GTR</h2>
+			<h5>MOBIL TERKEREN DIDUNIA</h5>
+            <img src="GTR.jpg"width="100%">
+			<h2>Kelebihan GTR</h2>
+			<p>Kelebihan pertama yang dimiliki oleh mobil GTR ini adalah desainnya yang lebih modern dan sporty. Tentunya banyak orang yang memang sangat mementingkan bentuk dan desain sebuah mobil ketika digunakan. Sehingga kebanyakan dari mereka juga memilih desain yang lebih futuristik atau nggak mudah hilang ditelan dengan zaman.</p><br>
+            <h2>Speed GTR</h2>
+<p>Mobil memiliki kecepatan tertinggi 193 mph. Supercar memiliki transmisi ganda kopling yang didasarkan pada teknologi Formula 1. GT-R ditawarkan dengan penggerak semua roda yang dikendalikan secara elektronik.</p>
+		</div>
+		<div class="card">
+			<h2>Lamborghini</h2>
+			<img src="lambo.jpg" width="100%"><br>
+			<h2>Speed Lamborgini</h2>
+			<p>Daya yang dihasilkannya sekitar 750 HP dengan torsi maksimal 690 NM. Sejatinya, generasi Lamborghini Aventador bisa melesat hingga batas speed 350 Km/Jam.</p>
+	</div>
+	<div class="card">
+			<h2>Mobil Sport</h2>
+			<p>Mobil sport adalah mobil yang dirancang dengan menitikberatkan pada performa dinamis, seperti handling , akselerasi, kecepatan tertinggi, sensasi berkendara, dan kemampuan balap . Mobil sport berasal dari Eropa pada awal tahun 1910-an dan saat ini diproduksi oleh banyak pabrikan di seluruh dunia.</p>
+            <img src="SPORRT.jpg" width="100%">
+	</div>
+	<div class="card">
+			<h2>Supra</h2>
+			<h5>Supra menggunakan mesin berkapasitas 2.998 cc, dengan konfigurasi 6 silinder segaris, 24 katup, dan twin-scroll turbocharger DOHC, GR Supra menghadirkan kekuatan yang mencapai 382 hp dan torsi sebesar 495 Nm, mobil ini memberikan akselerasi dan kecepatan yang mengesankan..</h5>
+            <img src="Supra.jpg" width="100%">
+	</div>
+</div>
+<div class="rightcolumn">
+	<div class="card">
+		<h2>About me</h2>
+		<img src="Supra.jpg"width="100%">
+		<p>Mobil Termasuk Favorit Seluruh Dunia</p>
+	</div>
+	<div class="card">
+		<h3>Populer post</h3>
+		<div class="fakeimg"><p>Supra</p></div>
+		<div class="fakeimg"><p>Gtr</p></div>
+		<div class="fakeimg"><p>Lamborghini</p></div>
+	</div>
+	<div class="card">
+		<h3>Follow me</h3>
+		<p>Ig:Kdotkbot</p>
+	</div>
+</div>
+</div>
+
+<div class="footer">
+	<h2>footer</h2>
+</div>
+	</body>
+</html>

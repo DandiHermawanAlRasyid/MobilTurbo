@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<title>CSS Website Layout</title>
+		<style>
+			body{
+				margin: 0;
+			}
+			/*style head*/
+			.header{
+				background-image: url(GTR.jpg);
+				padding: 60px;
+				text-align: center;
+			}
+			/* merubah warna pas kursor di meneyntuh link*/
+			.topnav a:hover{
+				background-color: #ddd;
+				color: black;
+			}
+			.topnav a{
+				float:left;
+				display: block;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			*{
+				box-sizing: border-box;
+			}
+			/* style the top navigation bar*/
+
+			.topnav{
+				overflow: hidden;
+				background-color: #333;
+			}
+			.column{
+				float: left;
+				width: 33.33%;
+				padding: 15px;
+			}
+			.row::after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			body{
+				font-family: Arial;
+				padding: 10px;
+				background: white;
+			}
+			.header h1{
+				font-size: 50px;
+			}
+			.leftcolumn{
+				float: left;
+				width: 75%;
+			}
+			.rightcolumn{
+				float: left;
+				width: 25%;
+				background-color: #yellow;
+				padding-left: 20px;
+			}
+			.fakeimg {
+				background-color: #aaa;
+				width: 100%;
+				padding: 20px;
+			}
+			.card{
+				background-color: #f1f1f1;
+				padding: 20px;
+				margin-top: 20px;
+			}
+			.footer{
+				padding: 20px;
+				text-align: center;
+				background: white;
+				margin_top:20px;
+			}
+			@media screen and (max-width:800px){
+				.leftcolumn,.rightcolumn{
+					width: 100%;
+					padding: 0;
+				}
+			}
+			@media screen and (max-width:400px){
+				.topnav a{
+					float: none;
+					width: 100%;h
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Permobilan</h1>
+			<p>Mobil Supercar</p>
+		</div>
+		<div class="topnav">
+			<a href="home.html">Foto1</a>
+			<a href="Photo.html">Foto2</a>
+			<a href="Admin.html">Admin</a>
+		</div>
+		<div class="row">
+	<div class="leftcolumn">
+		<div class="card">
+			<h2>Follow My Instagram</h2>
+            <img src="instagram.jfif"width="50%">
+		</div>
+</div>
+<div class="rightcolumn">
+	<div class="card">
+		<h2>About me</h2>
+		<img src="Supra.jpg"width="100%">
+		<p>Mobil Termasuk Favorit Seluruh Dunia</p>
+	</div>
+	<div class="card">
+		<h3>Populer post</h3>
+		<div class="fakeimg"><p>Supra</p></div>
+		<div class="fakeimg"><p>Gtr</p></div>
+		<div class="fakeimg"><p>Lamborghini</p></div>
+	</div>
+	<div class="card">
+		<h3>Follow me</h3>
+		<p>Ig:Kdotkbot</p>
+	</div>
+</div>
+</div>
+
+<div class="footer">
+	<h2>footer</h2>
+</div>
+	</body>
+</html>
